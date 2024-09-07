@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgba(197, 197, 197);
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: hsl(0deg 0% 75%);
+  box-shadow:
+    inset -1px -1px #292929,
+    inset 1px 1px #fff,
+    inset -2px -2px rgb(158, 158, 158),
+    inset 2px 2px #ffffff;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+
+button:active {
+  box-shadow:
+    inset -1px -1px #fff,
+    inset 1px 1px #292929,
+    inset -2px -2px #ffffff,
+    inset 2px 2px rgb(158, 158, 158);
+}
+
+.question-class{
+    display: flex; 
+    justify-content: space-between;
+    margin: 0cm 1cm 0cm 1cm;
+    border-bottom: dotted 1px black;
+    padding:0.5cm;
+    align-items: center;
+}
+.question-copy{
+    margin: 0 1cm 0 0;
+}
+.question-category{
+
+}
+.question-panel{
+    padding: 1cm;
+      box-shadow:
+    inset -1px -1px #292929,
+    inset 1px 1px #fff,
+    inset -2px -2px rgb(158, 158, 158),
+    inset 2px 2px #ffffff;
+    border-radius: 0.2cm;
+}
+.random-question{
+    padding: 1cm;
+      box-shadow:
+    inset -1px -1px #292929,
+    inset 1px 1px #fff,
+    inset -2px -2px rgb(158, 158, 158),
+    inset 2px 2px #ffffff;
+    margin-bottom:1cm;
+    border-radius: 0.2cm;
+}
+.random-question>.question-class{
+    border: dotted 1px black;
+    border-radius:0.2cm;
+    margin-top:0.5cm;
+}
+.question-banner{
+    display: grid;
+    place-items:center;
+    font-size:1.5rem;
+}
+
+.random-generate {
+    margin-left: 1cm;
+  border: none;
+  outline: none;
+  background-color: #6c5ce7;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #a29bfe;
+}
+
+.random-generate:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
